@@ -27,6 +27,8 @@ $db = new PDO(
   ''
 );
 
+// this is a change 
+
 
 
  foreach($db->query('SELECT * FROM gae_table') as $row){
