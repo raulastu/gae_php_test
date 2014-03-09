@@ -12,5 +12,9 @@ handlers:
 - url: /stylesheets
   static_dir: stylesheets
 
-- url: .*
-  script: main2.php
+ # Serve php scripts.
+- url: /(.+\.php)$
+  script: \1
+
+# - url: .*
+#   script: mysqli_test.php
