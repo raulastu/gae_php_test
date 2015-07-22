@@ -3,7 +3,7 @@
 echo 'echoing mysqli </br>';
 
 // local php - local mysql - working
-// $mysqli = new mysqli('localhost:8889', 'root', 'root', 'gae_test');
+$mysqli = new mysqli('localhost:8889', 'root', 'root', 'gae_test');
   
 
 // local php - Cloud SQL - working
@@ -13,7 +13,7 @@ echo 'echoing mysqli </br>';
 
 // GAE - Cloud SQL
 
-$mysqli = new mysqli(null, 'root', '', 'gae_test', null, '/cloudsql/round-device-509:cloudsqltest');
+// $mysqli = new mysqli(null, 'root', '', 'gae_test', null, '/cloudsql/round-device-509:cloudsqltest');
 
 
 $query = "SELECT * FROM gae_table";
